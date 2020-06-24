@@ -43,6 +43,11 @@ namespace SumaPlus.Web.Data.Entities
         [MaxLength(50)]
         public string Address { get; set; }
 
+        //[Display(Name = "Ciudad")]
+        ////[ForeignKey("Ciudad")]
+        ////public int idCiudad { get; set; }
+        //public string Ciudad { get; set; }
+
 
         [Display(Name = "Supplier")]
         public string FullName => $"{FirstName}{LastName}";
@@ -54,6 +59,6 @@ namespace SumaPlus.Web.Data.Entities
         //[ForeignKey("Pais")]
         //public int Pais { get; set; }
 
-        public Pais Paises { get; set; }
+        //public Pais Paises { get; set; }
     }
 }

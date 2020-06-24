@@ -10,29 +10,46 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            
             <div class="container">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">SumaPlus.Web</a>
-                <a class="navbar-brand" asp-area="" asp-controller="Suppliers" asp-action="Index">Suppliers</a>
-                <a class="navbar-brand" asp-area="" asp-controller="Pais" asp-action="Index">Pais</a>
-                <a class="navbar-brand" asp-area="" asp-controller="Agenda" asp-action="Index">Agenda</a>
-                <a class="navbar-brand" asp-area="" asp-controller="Products" asp-action="Index">Product</a>
-                <a class="navbar-brand" asp-area="" asp-controller="Mantenimiento" asp-action="Index">Mantenimiento</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+                <a class="navbar-brand" asp-area="" asp-controller="Configuration" asp-action="Index">Configuration</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Nueva Factura" asp-action="Index">Nueva Factura</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Reporte" asp-action="Index">Reporte Ventas</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Iventario" asp-action="Index">Inventario</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Inicio</a>
+
+
+                <li class="nav-item dropdown">
+                    <a href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown">
+                        Mantenimientos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <ul>
+                            <li> <a asp-area="" asp-controller="Suppliers" asp-action="Index">Suppliers</a> </li>
+                            <li> <a asp-area="" asp-controller="Agenda" asp-action="Index">Agenda</a> </li>
+                            <li> <a asp-area="" asp-controller="Pais" asp-action="Index">Pais</a> </li>
+                            <li> <a asp-area="" asp-controller="Products" asp-action="Index">Products</a> </li>
+                            <li> <a asp-area="" asp-controller="SupplierTypes" asp-action="Index">Supplier Type</a> </li>
+                            <li> <a asp-area="" asp-controller="Municipios" asp-action="Index">Municipio</a> </li>
+                            <li> <a asp-area="" asp-controller="Provincias" asp-action="Index">Provincia</a> </li>
+                        </ul>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                            <ul class="navbar-nav flex-grow-1">
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+</nav>
     </header>
     <div class="container">
         <main role="main" class="pb-3">

@@ -15,6 +15,11 @@ namespace SumaPlus.Web.Data.Entities
         [Required(ErrorMessage = "The field {0} is mandatory.")]
         public string Name { get; set; }
 
+        //[Display(Name = "Supplier Type")]
+        //[MaxLength(50, ErrorMessage = "The {0} field can not have more than {1} characters.")]
+        //[Required(ErrorMessage = "The field {0} is mandatory.")]
+        //public string SupplierType { get; set; }
+
         [Display(Name = "Image")]
         public string ImageUrl { get; set; }
 
@@ -34,7 +39,7 @@ namespace SumaPlus.Web.Data.Entities
         //TODO: replace the correct URL for the image
         public string ImageFullPath => string.IsNullOrEmpty(ImageUrl)
             ? null
-            : $"https://TDB.azurewebsites.net{ImageUrl.Substring(1)}";
+            : $"https://www.lenovo.com/medias/lenovo-laptop-thinkpad-x1-extreme-2nd-gen-hero.png?context=bWFzdGVyfHJvb3R8MjYzNTIyfGltYWdlL3BuZ3xoNGIvaGU2LzEwMDQyNDYzNTE4NzUwLnBuZ3xmMDE3MmMzNGFmMWQ2NzU4ZWNjZWM1ZDY4MGRjMmQzZTkwYTE1ZjdjYmM3N2U4NmZlNzg1ZjRlNjZhYzMxN2Vi{ImageUrl.Substring(1)}";
 
         [Display(Name = "Born*")]
         [DisplayFormat(DataFormatString = "{0:yyyy/MM/dd HH:mm}" )]
